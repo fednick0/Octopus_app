@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Choose Your Shoes</string>
+    <string name="predeterminado">abcdefghijklmnopqrstuvwxyz</string>
+    <string name="acerca">Software desarrollado para el proyecto \"Octopus: The Final Solution\"</string>
+</resources>

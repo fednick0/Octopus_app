@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/carro"
+        android:icon="@drawable/vector_carrito"
+        android:title="Carrito"
+        app:showAsAction="always" />
+
+    <item
+        android:title="Mas opciones"
+        android:icon="@drawable/vector_dots"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/recargar"
+                android:icon="@drawable/vector_refresh"
+                android:title="Recargar"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/cambiar_vendedor"
+                android:icon="@drawable/vector_cambiar_vendedor"
+                android:title="Cambiar vendedor"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/limpiar"
+                android:icon="@drawable/vector_delete"
+                android:title="Limpiar"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/acerca"
+                android:icon="@drawable/vector_info"
+                android:title="Acerca"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrincipal</item>
+        <item name="colorPrimaryDark">@color/colorPrincipalOscuro</item>
+        <item name="colorAccent">@color/colorPrincipalOscuro</item>
+        <item name="android:textColorPrimary">@color/colorOscuro</item>
+        <item name="android:textColorSecondary">@color/colorAcentuado</item>
+        <item name="colorControlNormal">@color/colorOscuro</item>
+        <item name="colorControlActivated">@color/colorOscuro</item>
+
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="actionOverflowButtonStyle">@style/tresdots</item>
+    </style>
+
+    <style name="tresdots" parent="@style/Widget.AppCompat.ActionButton.Overflow" >
+        <item name="android:tint">@color/colorOscuro</item>
+    </style>
+
+    <style name="popupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!--item name="android:colorBackground">@color/colorClaro</item-->
+        <item name="android:textColor">@color/colorOscuro</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+</resources>

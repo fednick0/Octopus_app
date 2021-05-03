@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorFondo"
+    tools:context=".CambiarVendedor">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cambiarVendedorToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrincipal"
+        app:contentInsetStartWithNavigation="0dp"
+        app:subtitle="Cambiar vendedor"
+        app:subtitleTextColor="@color/colorHint" />
+
+    <ScrollView
+        android:id="@+id/vendedorScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cambiarVendedorToolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_imgVendedor"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/imgVendedor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/vector_team" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_datosVendedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_imgVendedor"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="6dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@color/colorPrincipalOscuro" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="Vendedor Actual"
+                                android:textColor="@color/colorOscuro"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ID  "
+                                android:textColor="@color/colorText" />
+
+                            <TextView
+                                android:id="@+id/tv_idVendedor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00000000"
+                                android:textColor="@color/colorOscuro"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="   Username  "
+                                android:textColor="@color/colorText" />
+
+                            <TextView
+                                android:id="@+id/tv_usernameVendedor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="@string/predeterminado"
+                                android:textColor="@color/colorOscuro"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nombre  "
+                                android:textColor="@color/colorText" />
+
+                            <TextView
+                                android:id="@+id/tv_nombreVendedor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="@string/predeterminado"
+                                android:textColor="@color/colorOscuro"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--androidx.cardview.widget.CardView
+                android:id="@+id/cv_codeVendedor"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@id/cv_datosVendedor"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/codeVendedor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/ic_launcher" />
+            </androidx.cardview.widget.CardView-->
+
+            <View
+                android:id="@+id/dividerVendedor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/cv_datosVendedor"
+                android:layout_marginTop="12dp"
+                android:background="?android:attr/listDivider" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@id/dividerVendedor"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="6dp"
+                app:contentPaddingRight="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="true">
+
+                    <ImageView
+                        android:id="@+id/imgLeft"
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@color/colorPrincipalOscuro" />
+
+                    <TextView
+                        android:id="@+id/nuevoVendedor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/imgLeft"
+                        android:text="Cambiar Vendedor"
+                        android:textColor="@color/colorOscuro"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/btnInfoCambiar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/nuevoVendedor"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:onClick="btnInfo"
+                        android:src="@drawable/vector_info" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ed_nuevoUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nuevoVendedor"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/imgLeft"
+                        android:focusableInTouchMode="false"
+                        android:textColorHint="@color/colorHint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Username o ID"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@id/ed_nuevoPassword"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ed_nuevoPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ed_nuevoUser"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/imgLeft"
+                        android:focusableInTouchMode="false"
+                        android:textColorHint="@color/colorHint"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:imeOptions="actionGo"
+                            android:inputType="textPassword"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnCambiarVendedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ed_nuevoPassword"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@id/imgLeft"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:onClick="btn_setVendedor"
+                        android:text="Establecer Vendedor" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
