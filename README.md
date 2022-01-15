@@ -1,4 +1,4 @@
-# Octopus_app
+# Proyecto Octopus
 
 La manera que va a interactuar el usuario (trabajador del establecimiento) necesitará
 tener instalado el programa y de preferencia tener la versión más reciente de
