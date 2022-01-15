@@ -27,3 +27,14 @@ Figura 1.5
 <p align="center">(Figura 1.4) Opciones de selección</p>
 <p align="center"><img src="https://raw.githubusercontent.com/fednick0/Octopus_app_Android/master/app/src/main/res/drawable/screenshots/5.PNG" /></p>
 <p align="center">(Figura 1.5) Interfaz de iniciar sesión</p>
+
+- Para buscar un producto debe escribir el modelo que desee. Figura 2.1
+
+<p align="center"><img src="https://raw.githubusercontent.com/fednick0/Octopus_app_Android/master/app/src/main/res/drawable/screenshots/6.PNG" /></p>
+<p align="center">(Figura 2.1) Ventana del resultado de la búsqueda</p>
+
+- Para ver el carrito debe seleccionar el icono del carrito que está ubicado en la
+parte de arriba. Figura 3.1
+
+<p align="center"><img src="https://raw.githubusercontent.com/fednick0/Octopus_app_Android/master/app/src/main/res/drawable/screenshots/7.PNG" /></p>
+<p align="center">(Figura 3.1) Interfaz del carrito</p>
