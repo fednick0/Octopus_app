@@ -1,6 +1,8 @@
 # Proyecto Octopus
 
-<a href="url">Documentacion completa</a>
+Documentacion completa: <a href="https://github.com/fednick0/Octopus_app_Android/blob/master/Octopus%20the%20final%20solution.pdf">AQUI</a>
+
+## Aplicacion movil
 
 La manera que va a interactuar el usuario (trabajador del establecimiento) necesitará
 tener instalado el programa y de preferencia tener la versión más reciente de
